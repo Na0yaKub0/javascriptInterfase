@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+ <head>
+  <title>インターフェイステスト</title>
+ </head>
+ <body>
+ <p id="text">初期</p>
+
+ <button type="button" id="close" onclick="Close()">
+ クローズ
+ </button>
+
+ <button type="button" id="worker" onclick="Worker()">
+ ワーカー
+ </button>
+
+ <button type="button" id="logout" onclick="Logout()">
+ ログアウト
+ </button>
+
+ <script>
+function Close() {
+document.getElementById("text").innerText = "クローズ";
+Android.close()
+}
+
+function Worker() {
+document.getElementById("text").innerText = "ワーカー";
+}
+
+function Logout() {
+document.getElementById("text").innerText = "ログアウト";
+}
+ </script>
+ </body>
+</html>
